@@ -22,13 +22,15 @@ During vagrant provision, the following will be executed:
 ```bash
 echo "---> Chef install status:"
 dpkg-query -l chef
+
+echo "---> Install Chef"
 dpkg -i /vagrant/chef_11.12.8-2_amd64.deb
-cd /vagrant
 
 echo "---> Chef install status:"
 dpkg-query -l chef
 
 echo "---> Start chef run"
+cd /vagrant
 chef-client -z -o chef-purge
 
 echo "---> Chef install status:"
