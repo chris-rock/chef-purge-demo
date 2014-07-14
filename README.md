@@ -4,7 +4,7 @@ This project demonstrates a chef run without internet connection.
 
  - Installs local package
  - Runs chef-client in local mode
- - Purges the installation of chef
+ - Purges the installation of chef via chef
 
 # Usage
 
